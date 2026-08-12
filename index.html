@@ -4,87 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RSHÏ | DJ EPK</title>
-  <meta name="description" content="RSHÏ, Dancefloor-driven sets built around energy, flow, and crowd control. Atlanta, GA.">
+  <meta name="description" content="RSHÏ — Dancefloor-driven. Energy, flow, crowd control. Based in Atlanta, GA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a href="#bookings" class="book-fab">Book</a>
 
-  <!-- 1) Hero -->
   <header class="hero">
     <h1 class="hero-wordmark">RSHÏ</h1>
-    <p class="hero-tagline">Dancefloor-driven sets built around energy, flow, and crowd control.</p>
-    <p class="hero-location">Atlanta, GA, open to perform anywhere.</p>
+    <p class="hero-tagline">Dancefloor-driven. Energy, flow, crowd control.</p>
+    <p class="hero-location">Based in Atlanta, GA.</p>
+    <a href="#bookings" class="btn-book">Book RSHÏ</a>
   </header>
 
   <main>
-    <!-- 2) Bio -->
-    <section>
-      <h2 class="section-title">Bio</h2>
-      <p class="bio">RSHÏ is an Atlanta-based, genre-fluid DJ whose approach centers on movement, pacing, and crowd control. His sets move from groove-led afro and disco rhythms into bass-driven tech house and long, euphoric melodic moments. Rap influences appear as moments of homage to the music he grew up with, woven naturally into the flow of the night.</p>
-    </section>
-
-    <!-- 3) Style / Sound -->
-    <section>
-      <h2 class="section-title">Style / Sound</h2>
-      <ul class="tags">
-        <li>House</li>
-        <li>Tech House</li>
-        <li>UKG</li>
-        <li>Afro House</li>
-        <li>Club edits</li>
-        <li>Rap ↔ House transitions</li>
-      </ul>
-    </section>
-
-    <!-- 4) Clips -->
-    <section id="clips">
-      <h2 class="section-title">Clips</h2>
-      <div class="clips-card">
-        <p class="clips-copy">Recent transitions and set moments.</p>
-        <a href="https://www.tiktok.com/@rishrishtheboy/" target="_blank" rel="noopener noreferrer" class="clips-tiktok-btn">TikTok: @rishrishtheboy</a>
-        <a href="https://www.tiktok.com/@rishrishtheboy/" target="_blank" rel="noopener noreferrer" class="clips-tiktok-link">View on TikTok</a>
-        <p class="clips-note">Full-length mix coming soon (SoundCloud).</p>
+    <section class="section-bio" id="bio">
+      <div class="bio-bg" aria-hidden="true"></div>
+      <div class="bio-overlay" aria-hidden="true"></div>
+      <div class="bio-inner">
+        <h2 class="section-title">Bio</h2>
+        <p class="bio">RSHÏ is an Atlanta DJ whose job is simple: throw a proper party. Raised in music from a young age, he plays like a performer, not a background playlist, shifting through tech, indie, afro, and deep house to keep the floor on its toes. Drawing from the dancefloor focus of artists like Chris Stussy and Franky Rizardo, his sets are about selection and room control: raise the energy, hold it, and get everyone moving.</p>
+        <p class="venues-line">Performed at venues such as Jagger Suite, Glam104, and Embr Lounge.</p>
       </div>
-      <!--
-        RE-ENABLE SOUNDCLOUD/MIXCLOUD: When you publish a mix, replace the .clips-card div above
-        with the block below. Paste your iframe embed code inside .player-wrap.
-      -->
-      <!--
-      <div class="players">
-        <div class="player-wrap">
-          <iframe src="YOUR_SOUNDCLOUD_OR_MIXCLOUD_EMBED_URL" ...></iframe>
+    </section>
+
+    <section class="section-listen" id="listen">
+      <h2 class="section-title">Listen &amp; follow</h2>
+      <div class="proof-grid">
+        <a
+          class="proof-card"
+          href="https://on.soundcloud.com/xn7XBzCgxcgY3Sxhvh"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="proof-eyebrow">Listen</span>
+          <span class="proof-title">Featured mix</span>
+          <span class="proof-sub">funky town</span>
+          <span class="proof-copy">~50 min · best heard loud</span>
+          <span class="proof-cta">Play on SoundCloud →</span>
+        </a>
+        <a
+          class="proof-card"
+          href="https://www.tiktok.com/@rishrishtheboy/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="proof-eyebrow">TikTok</span>
+          <span class="proof-title proof-title--stat">1.1M views</span>
+          <span class="proof-sub">@rishrishtheboy</span>
+          <span class="proof-copy">125.9k likes</span>
+          <span class="proof-cta">View on TikTok →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-floor" id="floor">
+      <h2 class="section-title">On the floor</h2>
+
+      <div class="clip-wrap">
+        <video
+          class="floor-video"
+          id="floor-video"
+          playsinline
+          muted
+          loop
+          preload="metadata"
+          poster="assets/pisces-poster.jpg"
+        >
+          <source src="assets/pisces.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="visuals-grid">
+        <button type="button" class="visual-tile" data-full="assets/gallery-jagger.jpg" aria-label="View larger photo">
+          <img src="assets/gallery-jagger.jpg" alt="RSHÏ performing live" loading="lazy">
+        </button>
+        <button type="button" class="visual-tile" data-full="assets/gallery-embr-1.jpg" aria-label="View larger photo">
+          <img src="assets/gallery-embr-1.jpg" alt="RSHÏ live set with the crowd" loading="lazy">
+        </button>
+        <button type="button" class="visual-tile" data-full="assets/gallery-stage.png" aria-label="View larger photo">
+          <img src="assets/gallery-stage.png" alt="RSHÏ on stage" loading="lazy">
+        </button>
+      </div>
+      <p class="floor-caption">Click a photo to enlarge. Close with ×, outside click, or Esc.</p>
+    </section>
+
+    <section class="section-bookings" id="bookings">
+      <h2 class="section-title">Bookings</h2>
+      <p class="booking-intro">Open to opening sets, early or late slots, and last-minute bookings.</p>
+
+      <div class="email-row">
+        <a class="email-address" href="mailto:rmanoj2717@gmail.com">rmanoj2717@gmail.com</a>
+        <div class="email-actions">
+          <button type="button" class="email-action" id="copy-email" aria-label="Copy email" title="Copy">
+            <svg class="email-action-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+              <path d="M4 16V6a2 2 0 0 1 2-2h10"></path>
+            </svg>
+          </button>
+          <a
+            class="email-action"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=rmanoj2717@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open in Gmail"
+            title="Gmail"
+          >
+            <svg class="email-action-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path d="M12 11.5v2.9h5.1c-.2 1.2-1.5 3.6-5.1 3.6-3.1 0-5.6-2.5-5.6-5.6S8.9 7 12 7c1.7 0 2.9.7 3.5 1.3l2.4-2.3C16.5 4.7 14.5 3.8 12 3.8 7.5 3.8 3.8 7.5 3.8 12S7.5 20.2 12 20.2c4.6 0 7.7-3.3 7.7-7.9 0-.5 0-.9-.1-1.3H12z"/>
+            </svg>
+          </a>
+          <a
+            class="email-action"
+            href="mailto:rmanoj2717@gmail.com"
+            aria-label="Open in Email app"
+            title="Email"
+          >
+            <svg class="email-action-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+              <path d="M3 7l9 7 9-7"></path>
+            </svg>
+          </a>
         </div>
       </div>
-      -->
-    </section>
 
-    <!-- 5) Visuals -->
-    <section>
-      <h2 class="section-title">Visuals</h2>
-      <div class="visuals-grid visuals-grid--single">
-        <figure class="visual-tile">
-          <img src="assets/rshi-logo.png" alt="RSHI logo">
-          <figcaption>Logo</figcaption>
-        </figure>
+      <div class="booking-buttons">
+        <a
+          class="social-btn"
+          href="https://www.tiktok.com/@rishrishtheboy/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.76 1.52V6.84a4.84 4.84 0 0 1-1-.15z"/>
+          </svg>
+          <span>TikTok</span>
+        </a>
+        <a
+          class="social-btn"
+          href="https://www.instagram.com/rishimanoj27/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+          </svg>
+          <span>Instagram</span>
+        </a>
+        <a
+          class="social-btn"
+          href="https://soundcloud.com/rishrishtheboy"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="SoundCloud"
+        >
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d="M1.5 13.5c0 1.1.6 2 1.4 2h.2c.5 0 .9-.4.9-.9V11c0-.5-.4-.9-.9-.9h-.2c-.8 0-1.4.9-1.4 2v1.4zm3.2.1V9.8c0-.4.3-.7.7-.7s.7.3.7.7v3.8c0 .4-.3.7-.7.7s-.7-.3-.7-.7zm2.5.1V8.6c0-.4.3-.7.7-.7s.7.3.7.7v5.1c0 .4-.3.7-.7.7s-.7-.3-.7-.7zm2.5.1V7.9c0-.4.3-.7.7-.7s.7.3.7.7v5.9c0 .4-.3.7-.7.7s-.7-.3-.7-.7zm11.1-.9c0 1.8-1.5 3.2-3.3 3.2H12c-.5 0-.9-.4-.9-.9V8.6c0-.4.3-.7.7-.8 1.6-.4 2.8.8 2.8 2.3v.1c.4-.3.9-.4 1.4-.4 1.6 0 2.8 1.3 2.8 2.9z"/>
+          </svg>
+          <span>SoundCloud</span>
+        </a>
       </div>
-      <p class="visuals-note">Press photos and live shots coming soon. Bookings available now.</p>
-    </section>
-
-    <!-- 6) Bookings / Links -->
-    <section id="bookings">
-      <h2 class="section-title">Bookings / Links</h2>
-      <p class="booking-intro">Open to opening sets, early or late slots, and last-minute bookings.</p>
-      <ul class="booking-links">
-        <li><a href="mailto:rmanoj2717@gmail.com">rmanoj2717@gmail.com</a></li>
-        <li><a href="https://www.tiktok.com/@rishrishtheboy/" target="_blank" rel="noopener noreferrer">TikTok: @rishrishtheboy</a></li>
-        <li><a href="https://www.instagram.com/rishimanoj27/" target="_blank" rel="noopener noreferrer">Instagram: @rishimanoj27</a></li>
-      </ul>
     </section>
   </main>
 
   <footer>
     <p>RSHÏ · Atlanta, GA</p>
   </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
