@@ -355,6 +355,45 @@ section:last-of-type {
   max-height: min(72vh, 720px);
   margin: 0 auto;
   background: #000;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 1px solid rgba(242, 238, 230, 0.35);
+  border-radius: 50%;
+  background: rgba(10, 10, 10, 0.55);
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.video-play[hidden] {
+  display: none;
+}
+
+.video-play:hover,
+.video-play:focus {
+  background: rgba(10, 10, 10, 0.75);
+  border-color: rgba(242, 238, 230, 0.6);
+  transform: scale(1.04);
+}
+
+.video-play-icon {
+  width: 0;
+  height: 0;
+  margin-left: 0.2rem;
+  border-top: 0.55rem solid transparent;
+  border-bottom: 0.55rem solid transparent;
+  border-left: 0.9rem solid currentColor;
 }
 
 .visuals-grid {
